@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<body>
+
+<div class="wrapper">
+    <form class="form input-form" action="#">
+        <h3>Text Input</h3>
+        <label for="default">Label</label>
+        <div>
+            <input type="text" class="input" id="default" placeholder="Text">
+        </div>
+        <h3 class="title">Required</h3>
+        <label class="required-label" for="required">Label</label>
+        <div>
+            <input type="text" class="input" id="required" placeholder="Text">
+        </div>
+        <h3 class="title">Error</h3>
+        <div class="form-item">
+            <input type="text" class="input" id="error" value="Text">
+            <span class="error-message">Error message</span>
+        </div>
+        <h3 class="title">Success</h3>
+        <label for="success">Label</label>
+        <div class="form-item">
+            <input type="text" class="input" id="success" value="A complex form might have multiple input fields">
+            <span class="success-message">Success message</span>
+        </div>
+        <h3 class="title">Active</h3>
+        <label for="active">Label</label>
+        <div>
+            <input type="text" class="input" id="active" value="A complex form might...|">
+        </div>
+        <h3 class="title">Filled</h3>
+        <label for="filled">Label</label>
+        <div>
+        <textarea id="filled">
+            A complex form might have multiple input fields, stacked vertically. Space the input fields evenly, clearly associating
+        </textarea>
+        </div>
+
+
+        <h3 class="title">Read</h3>
+        <label for="read">Label</label>
+        <div>
+        <textarea id="read" readonly>
+            A complex form might have multiple input fields, stacked vertically. Space the input fields evenly, clearly associating
+        </textarea>
+        </div>
+        <h3 class="title">Password</h3>
+        <label for="input-password">Label</label>
+        <div class="input-password">
+            <input class="input" type="password" id="input-password" placeholder="Text">
+            <div class="icon">
+                <img src="img/hidden-password.svg" alt="hidden-password">
+            </div>
+        </div>
+        <h3 class="title">Date</h3>
+        <label for="date">Label</label>
+        <div class="input-date">
+            <input class="input" id="date" type="text" placeholder="Text">
+            <div class="icon">
+                <img src="img/date.svg" alt="date">
+            </div>
+        </div>
+    </form>
+
+
+    <form class="form" action="">
+        <h3>Text Area</h3>
+        <label for="textarea1">Label</label>
+        <textarea class="textarea" name="" id="textarea1" placeholder="Hint text"></textarea>
+
+        <h3 class="title">Required</h3>
+        <label class="required-label" for="textarea2">Label</label>
+        <textarea class="textarea" name="" id="textarea2" placeholder="Hint text"></textarea>
+
+        <h3 class="title">Error</h3>
+        <label class="required-label" for="textarea3">Label</label>
+        <textarea class="textarea" name="" id="textarea3">
+        Looking started he up perhaps against. How remainder all additions get elsewhere resources. One missed shy wishes supply design answer formed. Prevent on present hastily passage an subject in be. Be happiness arranging so newspaper defective affection ye.
+    </textarea>
+        <span class="error-message">Error message</span>
+
+        <h3 class="title">Counter</h3>
+        <label for="textarea4">Label</label>
+        <div class="comment">
+            <textarea class="textarea" name="" id="textarea4" placeholder="Hint text"></textarea>
+            <span class="limit">0 / 225</span>
+        </div>
+
+
+        <h3 class="title">Counter + Required</h3>
+        <label class="required-label" for="textarea5">Label</label>
+        <div class="comment">
+            <textarea class="textarea" name="" id="textarea5" placeholder="Hint text"></textarea>
+            <span class="limit">0 / 225</span>
+        </div>
+
+        <h3 class="title">Counter + Error</h3>
+        <label class="required-label" for="textarea6">Label</label>
+        <div class="comment error">
+            <textarea class="textarea" name="" id="textarea6" placeholder="Hint text"></textarea>
+            <span class="limit">255 / 225</span>
+        </div>
+        <span class="error-message">Error message</span>
+        <h3 class="title">Counter + Filled</h3>
+        <label class="required-label" for="textarea7">Label</label>
+        <div class="comment">
+        <textarea class="textarea" name="" id="textarea7" placeholder="Hint text">
+          Looking started he up perhaps against. How remainder all additions get elsewhere resources. One missed shy wishes supply design answer formed. Prevent on present hastily passage an subject in be. Be happiness arranging so newspaper defective affection ye.
+        </textarea>
+            <span class="limit">255 / 255</span>
+        </div>
+        <h3 class="title">Read</h3>
+        <label for="textarea8">Label</label>
+        <textarea class="read" id="textarea8" readonly>
+Looking started he up perhaps against. How remainder all additions get elsewhere resources. One missed shy wishes supply design answer formed. Prevent on present hastily passage an subject in be. Be happiness arranging so newspaper defective affection ye.
+</textarea>
+    </form>
+
+    <form class="form select-form" action="">
+        <h3>Select</h3>
+        <label for="select1">Label</label>
+        <div class="custom">
+            <select class="custom-select border" name="" id="select1">
+                <option value="value1" selected>Text</option>
+            </select>
+            <div class="position-icon">
+                <img src="img/triangle.svg" alt="triangle">
+            </div>
+        </div>
+
+
+        <h3 class="title">Error</h3>
+        <label for="select2">Label</label>
+        <div class="custom">
+            <select class="custom-select border" name="" id="select2">
+                <option value="value1" selected>Text</option>
+            </select>
+            <div class="position-icon">
+                <img src="img/triangle.svg" alt="triangle">
+            </div>
+        </div>
+        <span class="error-message">Error message</span>
+        <h3 class="title">Required</h3>
+        <label class="required-label" for="select3">Label</label>
+        <div class="custom">
+            <select class="custom-select border" name="" id="select3">
+                <option value="value1" selected>Text</option>
+            </select>
+            <div class="position-icon">
+                <img src="img/triangle.svg" alt="triangle">
+            </div>
+        </div>
+
+        <h3 class="title">Error</h3>
+        <label class="required-label" for="select4">Label</label>
+        <div class="custom">
+            <select class="custom-select border" name="" id="select4">
+                <option value="value1" selected>Text</option>
+            </select>
+            <div class="position-icon">
+                <img src="img/triangle.svg" alt="triangle">
+            </div>
+        </div>
+        <span class="error-message">Error message</span>
+        <h3 class="title">Selected</h3>
+        <label for="select5">Label</label>
+        <div class="custom">
+            <select class="custom-select border" name="" id="select5">
+                <option value="value1" selected>Text</option>
+            </select>
+            <div class="position-icon">
+                <img src="img/triangle.svg" alt="triangle">
+            </div>
+        </div>
+
+
+        <h3 class="title">Required + Selected</h3>
+        <label class="required-label" for="select6">Label</label>
+        <div class="custom">
+            <select class="custom-select border" name="" id="select6">
+                <option value="value1" selected>Text</option>
+            </select>
+            <div class="position-icon">
+                <img src="img/triangle.svg" alt="triangle">
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="second-wrapper">
+    <form class="form" action="">
+        <h3>Checkbox</h3>
+        <h3 class="title">Elements</h3>
+        <div class="checkboxes">
+            <input class="custom-checkbox" type="checkbox">
+            <label for=""></label>
+            <input class="custom-checkbox" checked type="checkbox">
+            <label class="checkbox-label" for=""></label>
+            <input class="custom-checkbox" disabled type="checkbox">
+            <label class="checkbox-label" for=""></label>
+
+        </div>
+
+
+        <h3 class="title">Enabled Unselected / Off</h3>
+        <input class="custom-checkbox" type="checkbox">
+        <label class="labels" for="">Item</label>
+
+
+        <h3 class="title">Enabled Selected / On</h3>
+        <input class="custom-checkbox" checked type="checkbox">
+        <label for="">Item</label>
+
+
+        <h3 class="title">Disabled Selected / On</h3>
+        <input class="custom-checkbox" disabled type="checkbox">
+        <label for="">Item</label>
+
+
+        <!--        <h3 class="title">Hover Selected / On</h3>-->
+        <!--        <input class="custom-checkbox" type="checkbox">-->
+        <!--        <label for="">Item</label>-->
+
+        <h3 class="title">Disabled Unselected / Off</h3>
+        <input class="custom-checkbox border" disabled type="checkbox">
+        <label for="">Item</label>
+
+
+        <!--        <h3 class="title">Hover Unselected / Off</h3>-->
+        <!--        <input class="custom-checkbox border" disabled type="checkbox">-->
+        <!--        <label for="">Item</label>-->
+    </form>
+
+
+    <form class="form" action="">
+
+        <h3>Radio Button</h3>
+        <h3 class="title">Elements</h3>
+        <div class="radio-buttons">
+            <input class="custom-radio" name="" type="radio" id="radio-1" value="">
+            <label for="radio-1"></label>
+            <div class="radio">
+                <input class="custom-radio" checked name="" type="radio" id="radio-5" value="item">
+                <label for="radio-5"></label>
+                <div class="round round-color"></div>
+            </div>
+            <div class="radio">
+                <input class="custom-radio" disabled name="" type="radio" id="radio-4" value="item">
+                <label for="radio-4"></label>
+                <div class="round"></div>
+            </div>
+            <input class="custom-radio" disabled name="" type="radio" id="radio-3" value="">
+            <label for=""></label>
+        </div>
+
+
+        <h3 class="title">Enabled Unselected / Off</h3>
+        <input class="custom-radio" name="" type="radio" id="radio1" value="item">
+        <label for="radio-1">Item</label>
+
+        <h3 class="title">Enabled Selected / On</h3>
+        <div class="radio">
+            <input class="custom-radio" checked name="" type="radio" id="radio-2" value="item">
+            <label for="radio-2">Item</label>
+            <div class="round round-color"></div>
+        </div>
+
+
+        <h3 class="title">Disabled Selected / On</h3>
+        <div class="radio">
+            <input class="custom-radio" disabled name="" type="radio" id="radio3" value="item">
+            <label for="">Item</label>
+            <div class="round"></div>
+        </div>
+
+
+        <!--        <h3 class="title">Hover Selected / On</h3>-->
+        <!--        <input class="custom-radio" name="" type="radio" id="radio4" value="item">-->
+        <!--        <label for="">Item</label>-->
+
+
+        <h3 class="title">Disabled UnSelected / Off </h3>
+        <input class="custom-radio" disabled name="" type="radio" id="radio5" value="item">
+        <label for="">Item</label>
+
+
+        <!--        <h3 class="title">Hover Unselected / Off </h3>-->
+        <!--        <input class="custom-radio" disabled name="" type="radio" id="radio6" value="item">-->
+        <!--        <label for="">Item</label>-->
+    </form>
+
+
+    <form class="form" action="">
+        <h3>Switch</h3>
+        <h3 class="title">Enabled Unselected / Off</h3>
+        <div class="container">
+            <input type="checkbox" id="toggle-button" class="toggle-button">
+        </div>
+        <h3 class="title">Enabled Selected / On</h3>
+        <div class="container">
+            <input type="checkbox" id="toggle-button2" checked class="toggle-button">
+        </div>
+        <h3 class="title">Disabled Selected / On</h3>
+        <div class="container">
+            <input type="checkbox" id="toggle-button3" disabled class="toggle-button">
+        </div>
+        <h3 class="title">Disabled Unselected / Off</h3>
+        <div class="container">
+            <input type="checkbox" id="toggle-button4" disabled class="toggle-button">
+        </div>
+    </form>
+</div>
+
+
+</body>
+</html>
